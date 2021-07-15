@@ -10,12 +10,13 @@ namespace ProblemTwo_CompilationError
     {
         public Employee ReportsTo { get; set; }
         public string ProjectCode { get; set; }
-        public DirectReport(int eID, string eName, int eLevel, DateTime eDoJ, Employee managerEmpObj, string pCode) 
+        
+        public DirectReport(int eID, string eName, int eLevel, DateTime eDoJ, Employee managerEmpObj, string pCode)
         {
-            this.EmpID = eID;
-            this.EmpName = eName;
-            this.EmpLevel = eLevel;
-            this.DateOfJoining = eDoJ;
+            EmpID = eID;
+            EmpName = eName;
+            EmpLevel = eLevel;
+            DateOfJoining = eDoJ;
             ReportsTo = managerEmpObj;
             ProjectCode = pCode;
         }
